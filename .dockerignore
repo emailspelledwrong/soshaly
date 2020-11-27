@@ -1,0 +1,16 @@
+# Ignore everything
+**
+
+# Allow files and directories
+!/default.conf
+!/initialize.py
+!/requirements.txt
+!/api/**
+!/root/**
+!/static/**
+!/templates/**
+
+# Ignore unnecessary files inside allowed directories
+# This should go after the allowed directories
+**/*.pyc
+**/.__pycache__

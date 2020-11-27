@@ -1,0 +1,31 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:1.17
+    container_name: nginx
+    volumes:
+      - ./default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - 80:80
+    networks:
+      - grapevine
+    depends_on:
+      - frontend
+  frontend:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    container_name: frontend
+    command: gunicorn --bind 0.0.0.0:8000 --workers 4 "initialize:initialize()"
+    ports:
+      - 8000:8000
+    volumes:
+      - ./:/usr/src/
+    networks:
+      grapevine:
+        aliases:
+          - frontend
+
+networks:
+  grapevine:
