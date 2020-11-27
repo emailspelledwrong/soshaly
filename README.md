@@ -16,5 +16,5 @@ You can post this kind of stuff:
 1. Don't be a jerk, or "The Supreme Soshalist" will excommunicate you for as long as they see fit.
 2. See Rule 1.
 
-#Technical Stuff
+# Technical Stuff
 This project is based on the FlaPyDoNG template.
