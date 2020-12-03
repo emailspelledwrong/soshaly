@@ -6,28 +6,53 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Import the Bootstrap stylesheet -->
-  <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
   <!-- Import public stylesheet -->
   <link rel="stylesheet" href="{{ url_for('static', filename='public.css') }}">
-  {% block css %}{% endblock %}
-
-  <title>{% block title %}{% endblock %}</title>
+  <title>soshaly - soshalist social media</title>
 </head>
 
 <body>
-
-  <main>
-    {% block main %}{% endblock %}
-  </main>
-
+	<div class="container" id="container-mother">
+		<div class="row" id="row-mother">
+			<div class="col" id="col-iron-curtain">
+				<div class="row" id="row-logo">
+					<div class="iron-curtain-col" id="col-logo">
+						<img id="logo" src="{{ url_for('static', filename='soshaly_logo.png') }}">
+						<img id="logo-text" src="{{ url_for('static', filename='soshaly.png') }}">
+					</div>
+				</div>
+				<div class="row" id="row-user">
+					<div class="col-iron-curtain" id="col-user">{% block user %}{% endblock %}</div>
+				</div>
+				<div class="row" id="row-post">
+					<div class="col-iron-curtain" id="col-post">{% block post %}{% endblock %}</div>
+				</div>
+				<div class="row" id="row-circles">
+					<div class="col-iron-curtain" id="col-circles">{% block circles %}{% endblock %}</div>
+				</div>
+				<div class="row" id="row-comrades">
+					<div class="col-iron-curtain" id="col-comrades">{% block comrades %}{% endblock %}</div>
+				</div>
+				<div class="row" id="row-invite">
+					<div class="col-iron-curtain" id="col-invite">{% block invite %}{% endblock %}</div>
+				</div>
+			</div>
+			<div class="col" id="col-iron-curtain-handle">
+				<span id="iron-handle-align"></span><img id="iron-handle" src="{{ url_for('static', filename='iron_handle.png') }}">
+			</div>
+			<div class="col" id="col-content">
+				<div class="row" id="search-row">
+				  <div class="col" id="search-col">
+					{% block search %}{% endblock %}
+				  </div>
+				</div>			
+        {% block content %}{% endblock %}
+			</div>
+		</div>
+	</div>
+	
   <!-- Import jquery 3.3.1 slim min -->
-  <script src="{{ url_for('static', filename='js/jquery.slim.min.js') }}"></script>
-  <!-- Import Bootstrap bundle -->
-  <script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
-  <!-- Import public JavaScript -->
-  <script src="{{ url_for('static', filename='public.js') }}"></script>
-  {% block script %}{% endblock %}
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 </body>
 
 </html>

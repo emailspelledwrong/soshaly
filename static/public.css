@@ -1,0 +1,95 @@
+body {
+    background-color: #f1e9e9;
+   /* font: 1rem/1.5 var(--font-family-sans-serif);*/
+}
+
+.container {
+}
+
+.row {
+	display: table-row;
+}
+
+.col {
+	display: table-cell;		
+}
+
+#row-mother {
+	display: block; 
+	white-space: nowrap; 
+}
+
+#logo {
+    height: 30px;
+    width: 30px;
+    vertical-align: top;
+}
+
+.col-iron-curtain {
+	display: table-cell;	
+	background-color: lightgray;
+}
+
+#iron-handle-align {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#col-iron-curtain-handle {
+	vertical-align: middle;
+	padding-right: 5px;
+}
+
+
+.row-post {
+	display: table-row;
+}
+
+.row-post-content {
+	display: table-row;
+}
+
+.row-da-nyet-inner {
+	display: table-row;	
+}
+
+.row-opinion {
+	display: table-row;
+	padding-top: 2px;
+}
+
+.row-opinion-add {
+	display: table-row;	
+	padding-top: 2px;
+}
+
+.col_da_button {
+	display: table-cell;
+}
+
+.col_da_count {
+	display: table-cell;
+}
+
+.col_da_nyet_spacer {
+	display: table-cell;
+	width: 20px;
+}
+
+.col_nyet_button {
+	display: table-cell;
+}
+
+.col_nyet_count {
+	display: table-cell;
+}
+
+.row-post-bottom {
+	display: table-row;
+}
+.col-post-bottom {
+	display: table-cell;
+	border-bottom: 2px dotted #777777;
+	padding-top: 1px;
+}

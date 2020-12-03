@@ -6,20 +6,189 @@
 
 {% block title %}{{ page_title }}{% endblock %}
 
-{% block main %}
-
-<div class="container">
-  <div class="row">
-    <div class="col">
-      <h1>{{ page_text|safe }}</h1>
-      <hr>
-      <a href="http://localhost/api">Go to API</a>
-
-    </div>
-  </div>
-</div>
-
+{% block user %}
+(avatar User Name)
 {% endblock %}
+
+{% block post %}
+<button type="button">Post</button>
+{% endblock %}
+
+{% block circles %}
+<a href="">Bourgeoisie</a><br>
+<a href="">Proletariat</a><br>
+<a href="">Blizkiye Druz'ya</a><br>
+<a href="">see all...</a><br>
+{% endblock %}
+
+{% block comrades %}
+<a href="">Viktor Smirnov</a><br>
+<a href="">Ivanka Antonov</a><br>
+<a href="">Annika Kalashnikov</a><br>
+<a href="">see all...</a><br>
+{% endblock %}
+
+{% block invite %}
+<button type="button">Invite</button>
+{% endblock %}
+
+{% block search %}
+<label for="search">Search:</label><input type=text id="search" name="search">
+{% endblock %}
+
+{% block content %}
+<div class="row-post" id="post_cb24b0e4-8aa2-4595-b05c-c0849712f6b4">
+    <div class="row-post-content">
+        <div class="col-post-content">Post 1 content</div>
+    </div>
+    <div class="row-da-nyet-outer">
+        <div class="col">
+            <div class="container">
+                <div class="row-da-nyet-inner">
+                    <div class="col_da_button"><button type="button">Da</button></div>
+                    <div class="col_da_count">275</div>
+                    <div class="col_da_nyet_spacer"></div>
+                    <div class="col_nyet_button"><button type="button">Nyet</button></div>
+                    <div class="col_nyet_count">14</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>SergeyN:</b> I very much like this.</div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>NatashaY:</b> You yourself should be ashamed.</div>
+    </div>
+    <div class="row-opinion-add">
+        <div class="col"><input><button type="button">.!?</button></div>
+    </div>
+    <div class="row-post-bottom">
+        <div class="col-post-bottom"></div>
+    </div>
+</div>
+<div class="row-post" id="post_12f3ea14-c15c-4a81-b347-a412c4acceb4">
+    <div class="row-post-content">
+        <div class="col-post-content">Post 2 content</div>
+    </div>
+    <div class="row-da-nyet-outer">
+        <div class="col">
+            <div class="container">
+                <div class="row-da-nyet-inner">
+                    <div class="col_da_button"><button type="button">Da</button></div>
+                    <div class="col_da_count">275</div>
+                    <div class="col_da_nyet_spacer"></div>
+                    <div class="col_nyet_button"><button type="button">Nyet</button></div>
+                    <div class="col_nyet_count">14</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>SergeyN:</b> I very much like this.</div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>NatashaY:</b> You yourself should be ashamed.</div>
+    </div>
+    <div class="row-opinion-add">
+        <div class="col"><input><button type="button">.!?</button></div>
+    </div>
+    <div class="row-post-bottom">
+        <div class="col-post-bottom"></div>
+    </div>
+</div>
+<div class="row-post" id="post_7a8d49d3-a818-4b91-9bbf-247097f8590a">
+    <div class="row-post-content">
+        <div class="col-post-content">Post 3 content</div>
+    </div>
+    <div class="row-da-nyet-outer">
+        <div class="col">
+            <div class="container">
+                <div class="row-da-nyet-inner">
+                    <div class="col_da_button"><button type="button">Da</button></div>
+                    <div class="col_da_count">275</div>
+                    <div class="col_da_nyet_spacer"></div>
+                    <div class="col_nyet_button"><button type="button">Nyet</button></div>
+                    <div class="col_nyet_count">14</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>SergeyN:</b> I very much like this.</div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>NatashaY:</b> You yourself should be ashamed.</div>
+    </div>
+    <div class="row-opinion-add">
+        <div class="col"><input><button type="button">.!?</button></div>
+    </div>
+    <div class="row-post-bottom">
+        <div class="col-post-bottom"></div>
+    </div>
+</div>
+<div class="row-post" id="post_7c611854-c67d-480f-ac3c-23e7e4fdc651">
+    <div class="row-post-content">
+        <div class="col-post-content">Post 4 content</div>
+    </div>
+    <div class="row-da-nyet-outer">
+        <div class="col">
+            <div class="container">
+                <div class="row-da-nyet-inner">
+                    <div class="col_da_button"><button type="button">Da</button></div>
+                    <div class="col_da_count">275</div>
+                    <div class="col_da_nyet_spacer"></div>
+                    <div class="col_nyet_button"><button type="button">Nyet</button></div>
+                    <div class="col_nyet_count">14</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>SergeyN:</b> I very much like this.</div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>NatashaY:</b> You yourself should be ashamed.</div>
+    </div>
+    <div class="row-opinion-add">
+        <div class="col"><input><button type="button">.!?</button></div>
+    </div>
+    <div class="row-post-bottom">
+        <div class="col-post-bottom"></div>
+    </div>
+</div>				
+<div class="row-post" id="post_7230caf3-2dc5-4882-8f0f-1c56aff54003">
+    <div class="row-post-content">
+        <div class="col-post-content">Post 5 content</div>
+    </div>
+    <div class="row-da-nyet-outer">
+        <div class="col">
+            <div class="container">
+                <div class="row-da-nyet-inner">
+                    <div class="col_da_button"><button type="button">Da</button></div>
+                    <div class="col_da_count">275</div>
+                    <div class="col_da_nyet_spacer"></div>
+                    <div class="col_nyet_button"><button type="button">Nyet</button></div>
+                    <div class="col_nyet_count">14</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>SergeyN:</b> I very much like this.</div>
+    </div>
+    <div class="row-opinion">
+        <div class="col"><b>NatashaY:</b> You yourself should be ashamed.</div>
+    </div>
+    <div class="row-opinion-add">
+        <div class="col"><input><button type="button">.!?</button></div>
+    </div>
+    <div class="row-post-bottom">
+        <div class="col-post-bottom"></div>
+    </div>
+</div>				
+{% endblock %}
+
 
 {% block script %}<script src="{{ url_for('static', filename='root.js') }}"></script>{% endblock %}
     

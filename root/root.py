@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template #,jsonify, send_from_directory, request, redirect, url_for
+from flask import Blueprint, render_template, flash #,jsonify, send_from_directory, request, redirect, url_for
 #from wekzeug.utils import secure_filename
 #import os, datetime
 
@@ -10,9 +10,9 @@ root_bp = Blueprint('root_bp', __name__,
 # /
 @root_bp.route('/')
 def root_root():
-    page_title = 'Root'
-    page_text = 'Hi! I''m a Flask Blueprint web app,<br>running in a Docker container, <br>behind an Nginx reverse-proxy,<br>in a separate container.'
-    return render_template('root/index.html', page_title=page_title, page_text=page_text)
+    page_title = 'soshaly'
+    return render_template('root/index.html', page_title=page_title)
+
 
 #root_bp.errorhandler() # register an error handler function
 #root_bp.before_request() # execute an action before every request
